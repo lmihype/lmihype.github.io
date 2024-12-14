@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile css file from scss every save",
+            "type": "shell",
+            "command": "sass --watch --no-source-map --style compressed scss/main.scss assets/css/main.min.css",
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
